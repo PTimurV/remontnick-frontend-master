@@ -1,0 +1,235 @@
+<header class='header fixed top-0 right-0 left-0 bg-white' id='header'>
+  <!-- info bar -->
+  <div class='info-bar'>
+<!--    МАРКЕТПОЛ - в прошлом Remontnick.ru-->
+    Дорогие клиенты! Мы работаем для вас и готовы обеспечить штатный сервис даже в кризисной ситуации. 
+    При заказе, пожалуйста уточняйте актуальные цены в нашем отделе продаж.
+  </div>
+
+  <div class='relative bg-white'>
+    <!-- top -->
+    <div class='header__top bg-white mdDown:hidden h-14 border-b border-black-8'>
+      <div class='wrapper flex justify-between mx-auto'>
+        <div class='body-5 py-4 flex gap-4 xl:gap-8'>
+          <div class='!hidden dropdown' data-dropdown data-btn>
+            <div class='flex items-center gap-3' data-dropdown-title tabindex='0'>
+              <svg class='fill-secondary h-5 w-[14px]'>
+                <use href="@/assets/svg/location.svg"></use>
+              </svg>
+
+              <span>
+                  Москва
+                </span>
+            </div>
+
+            <div class='dropdown-inner left-0 p-4 flex flex-col gap-4' data-dropdown-inner>
+              <div class='flex gap-3'>
+                  <span class='whitespace-nowrap'>
+                    Ваш город
+                  </span>
+
+                <svg class='h-5 w-[14px] fill-secondary'>
+                  <use href="@/assets/svg/location.svg"></use>
+                </svg>
+
+                <span>
+                    Москва?
+                  </span>
+              </div>
+
+              <div class='flex items-center gap-8'>
+                <button class='btn-primary w-20'>
+                  Да
+                </button>
+
+                <button class='btn-text'>
+                  Выбрать другой город
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href=''>
+            Шоу-румы
+          </a>
+
+          <a href=''>
+            Доставка и пункты выдачи
+          </a>
+        </div>
+
+        <div class='flex items-center gap-4 xl:gap-8'>
+          <div class='py-2 flex items-center gap-4 xl:gap-8'>
+            <a href='' class='chip-primary body-5'>
+              Для бизнеса
+            </a>
+
+            <div class='dropdown body-5' data-dropdown data-btn>
+              <div class='flex gap-2 items-center' data-dropdown-title tabindex='0'>
+                Покупателям
+
+                <svg class='w-3 h-2' data-dropdown-icon>
+                  <use href="@/assets/svg/chevron.svg"></use>
+                </svg>
+              </div>
+
+              <div class='dropdown-inner min-w-[205px] text-left body-1' data-dropdown-inner>
+                <a href='' class='list-el-revert'>
+                  Линолеум
+                </a>
+
+                <a href='' class='list-el-revert'>
+                  123
+                </a>
+
+                <a href='' class='list-el-revert'>
+                  123
+                </a>
+              </div>
+            </div>
+
+            <a href='' class='body-5'>
+              Оплата
+            </a>
+
+            <a href='' class='body-5'>
+              Контакты
+            </a>
+          </div>
+
+          <a href="tel:+79504977377" class='tooltip caption my-2 flex items-center flex-col' data-tooltip>
+              <span>
+                + 7 (950) 497-73-77
+              </span>
+
+            <button class='btn-text w-fit'>
+              Заказать звонок
+            </button>
+
+            <div class='tooltip__content tooltip__content_right' data-tooltip-inner>
+              <div class='tooltip__inner before:!right-[55px] before:left-auto'>
+                <span class='whitespace-nowrap'>Работаем ежедневно с 9:00 до 20:00 (по МСК)</span>
+                <span class='whitespace-nowrap'>Перезвоним вам в рабочее время.</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom -->
+    <div class='header__bottom wrapper relative px-8 py-3 mx-auto md:py-8 mdDown:shadow-md'>
+      <div class='h-8 flex items-center justify-between md:h-11'>
+        <!-- mobile -->
+        <button class='flex items-center md:hidden' data-aside-btn>
+          <svg class='h-3 w-[18px]'>
+            <use href="@/assets/svg/burger.svg"></use>
+          </svg>
+        </button>
+
+        <a href='/'>
+          <svg class='h-[26px] w-[102px] sm:h-[32px] sm:w-[129px] md:h-[42px] md:w-[186px] md:mr-8'>
+            <use href="@/assets/svg/logo-old.svg"></use>
+          </svg>
+        </a>
+
+        <!-- mobile -->
+        <button class='flex items-center md:hidden h-fit' data-search-show>
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </button>
+
+        <!-- desktop -->
+        <button class='btn-primary body-5 mr-4 py-3 pr-4 pl-5 hidden items-center justify-between gap-[10px] md:flex'
+                data-menu-toggle data-menu-variant-btn='main-menu'>
+          <svg class='w-4 h-4 fill-secondary' data-menu-show>
+            <use href="@/assets/svg/square-menu.svg"></use>
+          </svg>
+
+          <svg class='w-[14px] h-[14px] fill-secondary' data-menu-hide>
+            <use href="@/assets/svg/close.svg"></use>
+          </svg>
+
+          <span>
+            Каталог
+          </span>
+        </button>
+
+        <!-- search -->
+        <div class='mr-auto h-full w-full max-w-xl flex grow mdDown:hidden'>
+          <div class='search search_desktop h-full' id='search-desktop' data-search>
+            <form
+              data-search-form
+              class='search__form relative h-full w-full flex flex-col items-center justify-center bg-black-2'
+            >
+              <div class='pl-4 pr-12 h-full w-full flex items-center justify-center bg-black-2'>
+                <label class='w-full bg-inherit'>
+                  <input
+                    class='search__input body-1 w-full outline-0 placeholder:text-black-60 bg-inherit'
+                    data-search-input
+                    type='text'
+                    name="search"
+                    placeholder="Ламинат, ковролин или клей"
+                    autocomplete='off'
+                  >
+                </label>
+              </div>
+
+              <button type='submit'
+                      class='search__submit search-submit cursor-pointer absolute right-1 w-8 h-8 flex items-center justify-center bg-white shadow-md'
+                      aria-label='Поиск'>
+                <svg class='h-4 w-4 fill-primary-dark'>
+                  <use href="@/assets/svg/search-icon.svg"></use>
+                </svg>
+              </button>
+
+              <div class='search__items' tabindex='0' data-search-items></div>
+            </form>
+          </div>
+
+          <a href='' class='ml-5 flex items-center gap-[10px] mdDown:hidden'>
+            <svg class='h-6 w-4 fill-error'>
+              <use href="@/assets/svg/hot.svg"></use>
+            </svg>
+
+            <span class='body-3 text-error'>
+              Акции
+            </span>
+          </a>
+        </div>
+
+        <!-- desktop -->
+        <div class='hidden md:flex items-center gap-5 ml-6 lg:mr-10'>
+          <a href=''>
+            <svg class='h-4 w-4'>
+              <use href="@/assets/svg/person.svg"></use>
+            </svg>
+          </a>
+
+          <a href=''>
+            <svg class='h-5 w-5'>
+              <use href="@/assets/svg/fav.svg"></use>
+            </svg>
+          </a>
+
+          <a href=''>
+            <svg class='h-4 w-4'>
+              <use href="@/assets/svg/comparison.svg"></use>
+            </svg>
+          </a>
+
+          <a href='' class='relative'>
+            <svg class='h-5 w-5'>
+              <use href="@/assets/svg/basket.svg"></use>
+            </svg>
+
+            <div class='badge caption w-6 h-5 flex items-center justify-center'>
+              12
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

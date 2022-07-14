@@ -1,0 +1,73 @@
+@layer utilities {
+  .h1 {
+    @apply text-3xl font-medium leading-9 tracking-3 xl:text-5xl xl:leading-12;
+  }
+
+  .h2 {
+    @apply text-2xl font-medium leading-10 xl:text-4xl xl:leading-11;
+  }
+
+  .h3 {
+    @apply text-xl font-medium leading-6 xl:text-3xl xl:leading-11;
+  }
+
+  .h4 {
+    @apply text-lg font-medium leading-7 tracking-2 xl:text-xl xl:leading-11;
+  }
+
+  .h5 {
+    @apply text-base leading-6 tracking-2 xl:text-lg xl:leading-9;
+  }
+
+  .subtitle-1 {
+    @apply text-sm font-medium leading-4 tracking-2 xl:text-base xl:leading-8 xl:tracking-0;
+  }
+
+  .subtitle-2 {
+    @apply text-xs leading-2 tracking-1 xl:text-sm xl:leading-5;
+  }
+
+  .subtitle-3 {
+    @apply text-base font-medium leading-6 xl:text-lg xl:leading-8;
+  }
+
+  .body-1 {
+    @apply text-sm leading-4 tracking-5 xl:text-base xl:leading-8 xl:tracking-0;
+  }
+
+  .body-2 {
+    @apply text-sm font-light leading-4 tracking-5 xl:text-base xl:leading-5 xl:tracking-1;
+  }
+
+  .body-3 {
+    @apply text-xs font-medium leading-3 tracking-5 xl:text-sm xl:leading-5 xl:tracking-1;
+  }
+
+  .body-4 {
+    @apply text-xs font-light leading-3 tracking-1 xl:text-sm xl:leading-5;
+  }
+
+  .body-5 {
+    @apply text-xs leading-3 tracking-1 xl:text-sm xl:leading-4;
+  }
+
+  .button {
+    @apply text-xs font-medium leading-5 tracking-6 uppercase xl:text-sm;
+  }
+
+  .button-2 {
+    @apply text-xs leading-5 tracking-5 xl:text-sm;
+  }
+
+  .caption {
+    @apply text-3xs leading-1 tracking-4 xl:text-xs xl:leading-3;
+  }
+
+  .caption-2 {
+    @apply text-xs font-medium leading-5 tracking-3 xl:text-xs;
+  }
+
+  .overline {
+    @apply text-4xs leading-5 tracking-7 uppercase xl:text-2xs;
+  }
+}

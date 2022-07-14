@@ -1,0 +1,83 @@
+/*html.fix-classes {*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*header.fix-classes {*/
+/*    !*display: initial;*!*/
+/*    opacity: unset;*/
+/*    background-image: none;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.fix-classes .fixed {*/
+/*    !*display: initial;*!*/
+/*    opacity: unset;*/
+/*}*/
+
+/*.fix-classes .hidden {*/
+/*    !*display: initial !important;*!*/
+/*}*/
+
+/*.fix-classes a:focus, .fix-classes a:active {*/
+/*    color: inherit;*/
+/*}*/
+
+/*.fix-classes a:hover, .fix-classes a:focus, .fix-classes a:active {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.fix-classes label {*/
+/*    margin-top: 0;*/
+/*}*/
+
+.fix-classes {
+  all: unset;
+}
+
+.fix-classes a:hover {
+  color: theme('colors.secondary.DEFAULT');
+}
+
+.fix-classes a:hover {
+  color: theme('colors.secondary.DEFAULT');
+}
+
+#footer a:hover {
+  color: theme('colors.white.DEFAULT');
+}
+
+html {
+  font-size: 16px !important;
+}
+
+header {
+  display: unset;
+  opacity: unset;
+  background-image: none;
+  margin-bottom: 0;
+}
+
+.fix-classes * {
+  font-family: 'Gotham Pro', sans-serif !important;
+}
+
+.fix-classes label {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.fix-classes a:hover,
+.fix-classes a:focus {
+  text-decoration: none;
+}
+
+#bx-panel {
+  z-index: 999999999999 !important;
+}

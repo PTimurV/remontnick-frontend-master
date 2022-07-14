@@ -1,0 +1,21 @@
+@layer components {
+  .list-el-base {
+    @apply cursor-pointer px-4 py-3 flex w-full focus text-secondary hover:text-secondary;
+  }
+
+  .list-el {
+    @apply list-el-base text-left bg-black-2 hover:list-el-active focus:list-el-active;
+  }
+
+  .list-el-revert {
+    @apply list-el-base bg-white hover:list-el-revert-active focus:list-el-revert-active;
+  }
+
+  .list-el-active {
+    @apply bg-white !important;
+  }
+
+  .list-el-revert-active {
+    @apply bg-black-2 !important;
+  }
+}

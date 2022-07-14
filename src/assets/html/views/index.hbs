@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="/manifest.json">
+  <title>Проекты</title>
+</head>
+<body class='relative'>
+<!--<body class='relative' data-show-info-bar shown>-->
+{{> layouts/header }}
+{{> layouts/aside }}
+{{> menu }}
+{{> search }}
+{{> layouts/tab-bar }}
+{{> test-nav }}
+
+<main class='main overflow-x-hidden' style='height: 200vh'>
+    <div class='wrapper'>
+  <div class='main-banner overflow-x-hidden relative mt-4 w-full' id='main-banner'>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class='swiper-slide'>
+        <div class='relative flex w-full h-full mdDown:flex-col'>
+<!--          <picture class='w-full'>-->
+<!--            <source srcset="@/assets/img/main-banner/banner-1.avif" type="image/avif">-->
+<!--            <source srcset="@/assets/img/main-banner/banner-1.webp" type="image/webp">-->
+<!--            <source srcset="@/assets/img/main-banner/banner-1.jpg" type="image/jpg">-->
+<!--            <source srcset="@/assets/img/main-banner/banner-1.png" type="image/png">-->
+<!--            <img class='object-cover h-[145px] md:h-[255px] xl:h-[335px] w-full' src="@/assets/img/main-banner/banner-1.png" loading='lazy' alt='Баннер'>-->
+<!--          </picture>-->
+          <img class='object-cover h-[145px] md:h-[255px] xl:h-[335px] w-full' src="upload/dev/img/main/banner.png" loading='lazy' alt='Баннер'>
+
+          <div class='flex flex-col items-center justify-center mdDown:px-4 mdDown:py-6 mdDown:text-center mdDown:bg-black-8 md:absolute md:top-0 md:right-0 md:left-20 md:bottom-0 md:items-start md:text-white'>
+            <h2 class='h2 mb-2 md:uppercase'>
+              Выбирать стало еще проще
+            </h2>
+
+            <span class='body-1 mb-4 md:mb-6'>
+              Более 8000 наименований напольных покрытий
+              <br class='mdDown:hidden'>
+              для любых типов помещений
+            </span>
+
+            <a href=''>
+              <button class='btn-primary button-2'>
+                Перейти
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+<!--       <div class='swiper-slide'> -->
+<!--         slide2 -->
+<!--       </div> -->
+    </div>
+
+
+    <button class='main-banner-left-btn z-10 absolute top-0 left-6 bottom-0 my-auto w-8 h-8 flex items-center justify-center bg-white rounded-full mdDown:hidden' aria-label='Предыдущий слайд'>
+      <svg class='w-3 h-3 fill-secondary'>
+        <use href="@/assets/svg/arrow.svg"></use>
+      </svg>
+    </button>
+
+    <button class='main-banner-right-btn z-10 absolute top-0 right-6 bottom-0 my-auto w-8 h-8 flex items-center justify-center bg-white rounded-full mdDown:hidden' aria-label='Сделующий слайд'>
+      <svg class='w-3 h-3 fill-secondary rotate-180'>
+        <use href="@/assets/svg/arrow.svg"></use>
+      </svg>
+    </button>
+  </div>
+  {{> layouts/info }}
+   {{> layouts/fastMenu }}
+    </div>
+    <div class="bg-slate-100">
+        <div class="wrapper">
+            {{> layouts/mainMenu }}
+        </div>
+    </div>
+    <div class="wrapper">
+        {{> layouts/mainLast }}
+        {{> layouts/optBuyer }}
+        {{> layouts/mainSale }}
+        {{> layouts/mainNews }}
+
+    </div>
+    <div class="bg-slate-100">
+        <div class="wrapper">
+            {{> layouts/mainChecked }}
+        </div>
+    </div>
+    <div class="wrapper">
+        {{> layouts/mostView }}
+        {{> layouts/mainInfo }}
+
+
+    </div>
+
+</main>
+
+{{> layouts/footer }}
+</body>
+</html>

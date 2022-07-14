@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ui kit</title>
+</head>
+<body class='flex gap-10 p-10'>
+
+{{> test-nav }}
+
+{{#with htmlWebpackPlugin.options.data.ui }}
+  <div class='flex flex-col gap-2 p-4 border border-secondary w-fit h-fit'>
+    <div class='h1 mb-4'>Typography</div>
+
+    {{#each typography}}
+      <div class='{{this}} mb-4'>
+        {{this}}
+      </div>
+    {{/each}}
+  </div>
+
+  <div class='flex flex-col gap-2 p-4 border border-secondary w-fit h-fit'>
+    <div class='h1'>Button</div>
+
+    <div class='flex flex-col items-center gap-8 p-4 bg-white'>
+      <div class='flex flex-row gap-4'>
+        <button class='btn-primary button-2'>
+          Button
+        </button>
+
+        <button class='btn-primary button-2' disabled>
+          Button
+        </button>
+      </div>
+
+      <div class='flex flex-row gap-4'>
+        <button class='btn-outline button-2'>
+          Button
+        </button>
+
+        <button class='btn-outline button-2' disabled>
+          Button
+        </button>
+      </div>
+
+      <div class='flex flex-row gap-4 bg-secondary p-4'>
+        <button class='btn-secondary button-2'>
+          Button
+        </button>
+
+        <button class='btn-secondary button-2' disabled>
+          Button
+        </button>
+      </div>
+
+      <div class='flex flex-row gap-4'>
+        <button class='btn-text button-2'>
+          Купить в один клик
+        </button>
+      </div>
+
+      <div class='flex flex-row gap-4'>
+        <button class='btn-primary flex gap-3 items-center py-3 pl-5 pr-4 body-5'>
+          <svg class='fill-secondary w-4 h-4'>
+            <use href="@/assets/svg/square-menu.svg"></use>
+          </svg>
+
+          Каталог
+        </button>
+
+        <button class='btn-primary flex gap-3 items-center py-3 pl-5 pr-4 body-5'>
+          <svg class='fill-secondary w-[14px] h-[14px]'>
+            <use href="@/assets/svg/close.svg"></use>
+          </svg>
+
+          Каталог
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class='flex flex-col gap-2 p-4 border border-secondary w-fit h-fit'>
+    <div class='h1'>Chips</div>
+
+    <div class='flex flex-col items-center gap-8 p-4 bg-white'>
+      <div class='flex flex-row gap-4'>
+        <button class='chip-secondary body-5'>
+          Enabled
+        </button>
+
+        <button class='chip-secondary body-5' disabled>
+          Enabled
+        </button>
+      </div>
+
+      <div class='flex flex-row gap-4'>
+        <button class='chip-primary body-5'>
+          Enabled
+        </button>
+
+        <button class='chip-primary body-5' disabled>
+          Enabled
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    forms
+  </div>
+{{/with}}
+</body>
+</html>

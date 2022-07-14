@@ -1,0 +1,13 @@
+@layer components {
+  .accordion-title {
+    @apply cursor-pointer flex items-center justify-between py-3 w-full border-b border-white-24;
+  }
+
+  .accordion-icon {
+    @apply mr-5 w-2 h-2 fill-white transition-transform ease-linear duration-300;
+  }
+
+  .accordion-inner {
+    @apply overflow-y-hidden max-h-0 transition-height ease-linear duration-300;
+  }
+}

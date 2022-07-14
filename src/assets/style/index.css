@@ -1,0 +1,44 @@
+@import 'fonts.css';
+@import 'typography.css';
+@import 'utilities.css';
+@import 'components';
+@import 'layouts';
+@import 'z-position.css';
+@import 'fix-conflicts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  html {
+    font-family: 'Gotham Pro', sans-serif;
+    color: theme('colors.secondary.DEFAULT');
+    height: 100%;
+  }
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  @apply bg-black-8;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+}
+
+.main {
+  padding-top: var(--header-height);
+}
+
+:root {
+  --tab-bar-height: 58px;
+}

@@ -1,0 +1,27 @@
+.main-check{
+background-color: gray;
+}
+.main-check1{
+    font-size: 28px;
+    display: inline-block;
+    margin-top: 64px;
+    font-weight: bold;
+}
+
+.main-check2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+.main-check21{
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+.main-check-price{
+    display: flex;
+    flex-direction: row;
+}
+.main-check-all{
+
+}

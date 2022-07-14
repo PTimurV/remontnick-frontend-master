@@ -1,0 +1,23 @@
+@layer components {
+  .chip {
+    @apply px-4 py-[6px] w-fit rounded-[61px];
+  }
+
+  .chip-secondary {
+    @apply chip
+        bg-secondary text-on-secondary
+        hover:bg-gradient-to-t hover:from-white/[.08] hover:to-white/[.08]
+        active:bg-gradient-to-t active:from-white/[.24] active:to-white/[.24]
+        disabled:bg-black-32 disabled:text-white disabled:bg-none
+        disabled:hover:bg-none disabled:hover:bg-black-32;
+  }
+
+  .chip-primary {
+    @apply chip
+        bg-primary-24 text-on-primary
+        hover:bg-primary-light
+        active:bg-primary-32
+        disabled:bg-black-32 disabled:text-white
+        disabled:hover:bg-black-32;
+  }
+}

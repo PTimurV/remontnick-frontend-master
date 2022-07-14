@@ -1,0 +1,26 @@
+@layer components {
+  .tooltip {
+    @apply relative;
+  }
+
+  .tooltip:hover .tooltip__content {
+    display: block;
+  }
+
+  .tooltip__content {
+    @apply z-30 absolute hidden;
+    top: calc(100% + 1rem);
+  }
+
+  .tooltip__content_right {
+    @apply right-0;
+  }
+
+  .tooltip__inner {
+    @apply caption relative p-2 text-white bg-black/[.87] rounded before:w-[12px] before:h-3 before:absolute before:-top-[6px] before:bg-black-87 before:rotate-45 before:rounded-sm;
+  }
+
+  .tooltip__inner:before {
+    left: calc(50% - 6px);
+  }
+}

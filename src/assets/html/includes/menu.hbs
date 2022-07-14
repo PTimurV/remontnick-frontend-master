@@ -1,0 +1,569 @@
+<!--  menu -->
+<div id='menu' class='menu' data-menu tabindex='0'>
+  <div class='menu__left-bg'></div>
+  <div class='menu__right-bg'></div>
+
+  <div class='flex mdDown:h-full mdDown:bg-white md:wrapper'>
+    <div class='h-full w-full md:flex' data-menu-variant='main-menu'>
+      <div class='menu__categories' data-category shown>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-menu-close>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+              Каталог
+            </span>
+          </button>
+
+          <button class='cursor-pointer' data-search-show>
+            <svg class='h-[18px] w-[18px]'>
+              <use href="@/assets/svg/search-icon.svg"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a href='' class='body-1 cursor-pointer flex items-center gap-[10px] mdDown:list-el-revert mdDown:px-6 md:list-el'>
+          <svg class='h-6 w-4 fill-error'>
+            <use href="@/assets/svg/hot.svg"></use>
+          </svg>
+
+          <span class='body-3 text-error'>
+          Акции
+        </span>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='1'>
+        <span>
+          Линолеум
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='1'>
+        <span>
+          Линолеум
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='2'>
+        <span>
+          Ламинат
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='2'>
+        <span>
+          Ламинат
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='3'>
+        <span>
+          Ковролин
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='3'>
+        <span>
+          Ковролин
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='4'>
+        <span>
+          Грязезащитные покрытия
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='4'>
+        <span>
+          Грязезащитные покрытия
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='5'>
+        <span>
+          Пробковые покрытия
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='5'>
+        <span>
+          Пробковые покрытия
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='6'>
+        <span>
+          Виниловая плитка (ПВХ)
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='6'>
+        <span>
+          Виниловая плитка (ПВХ)
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+
+        <button
+          class='menu__category-item md:hidden'
+          data-category-id='7'>
+        <span>
+          Паркетная доска
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </button>
+
+        <a
+          href="/"
+          class='menu__category-item hidden md:flex'
+          data-category-id='7'>
+        <span>
+          Паркетная доска
+        </span>
+
+          <svg class='md:hidden w-3 h-2 fill-black-60 -rotate-90'>
+            <use href="@/assets/svg/chevron.svg"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='1' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+            Линолеум
+          </span>
+          </button>
+
+          <button class='cursor-pointer' data-search-show>
+            <svg class='h-[18px] w-[18px]'>
+              <use href="@/assets/svg/search-icon.svg"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item menu__subcategory-item_all'>
+            Все товары
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Бытовой
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Бытовой усиленный
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Полукоммерческий
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Шириной 5 метров
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Коммерческий
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Спортивный
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Выставочный
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Транспортный
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Натуральный
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Под плитку
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Сценический
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Акустический
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Антистатический
+          </a>
+          <a href='' class='menu__subcategory-item'>
+            Токопроводящий
+          </a>
+        </div>
+
+        <div class='flex flex-col gap-4 mdDown:hidden'>
+          <div class='relative bg-cover pb-[24%]'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute left-0 right-0 top-0 bottom-0 flex items-center pl-6'>
+              <span class='bg-white body-5 p-1'>Акции</span>
+            </a>
+          </div>
+
+          <div class='relative bg-cover pb-[24%]'
+               style='background-image: url("./upload/dev/img/header/menu-category-2.png")'>
+            <a href='' class='absolute left-0 right-0 top-0 bottom-0 flex items-center pl-6'>
+              <span class='bg-white body-5 p-1'>Остатки</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='2' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Ламинат
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Ламинат
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Ламинат
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='3' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Ковролин
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='4' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Грязезащитные покрытия
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='5' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Пробковые покрытия
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='6' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Виниловая плитка (ПВХ)
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class='menu__subcategories' data-category-by='7' data-subcategory>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-category-back>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+                Паркетная доска
+              </span>
+          </button>
+
+          <svg class='h-[18px] w-[18px]'>
+            <use href="@/assets/svg/search-icon.svg"></use>
+          </svg>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div>
+          <a href='' class='menu__subcategory-item'>
+            Подкатегория1
+          </a>
+        </div>
+
+        <div class='mdDown:hidden'>
+          <div class='relative pb-[24%] bg-cover mdDown:body-1'
+               style='background-image: url("./upload/dev/img/header/menu-category-1.png")'>
+            <a href='' class='absolute top-0 right-0 bottom-0 left-0 pl-6 flex items-center'>
+              <span class='body-5 p-1 bg-white'>Акции</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='h-full w-full' data-menu-variant='buyers'>
+      <div class='menu__categories' data-category shown>
+        <div class='px-5 h-14 items-center justify-between border-b border-black-8 mdDown:flex md:hidden'>
+          <button class='subtitle-1 flex items-center gap-3' data-menu-close>
+            <svg class='w-3 h-2 fill-secondary rotate-90'>
+              <use href="@/assets/svg/chevron.svg"></use>
+            </svg>
+
+            <span>
+              Покупателям
+            </span>
+          </button>
+
+          <button class='cursor-pointer' data-search-show>
+            <svg class='h-[18px] w-[18px]'>
+              <use href="@/assets/svg/search-icon.svg"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a href='' class='body-1 cursor-pointer mdDown:list-el-revert mdDown:px-6 md:list-el'>
+          Услуги
+        </a>
+
+        <a href='' class='body-1 cursor-pointer mdDown:list-el-revert mdDown:px-6 md:list-el'>
+          Блок
+        </a>
+
+        <a href='' class='body-1 cursor-pointer mdDown:list-el-revert mdDown:px-6 md:list-el'>
+          Нас выбирают
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

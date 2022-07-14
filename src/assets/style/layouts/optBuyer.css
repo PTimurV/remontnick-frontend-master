@@ -1,0 +1,15 @@
+.opt-buy{
+    background-image: url(@/assets/svg/Opt.png);
+    color: #F6F6F6;
+}
+.opt-buy1{
+    font-size: 28px;
+
+}
+.opt-buy2{
+
+}
+.opt-buy3{
+    color: black;
+    background-color: #FFB74D;
+}

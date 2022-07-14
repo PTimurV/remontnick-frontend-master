@@ -1,0 +1,24 @@
+image: node:16.13.0
+
+pipelines:
+  branches:
+    master:
+      - step:
+          deployment: production
+          name: Deploy to production
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+            - scp -r ./$BUILD_DIR $USER@$HOST:$SITE_ROOT$FRONTEND_PATH
+    develop:
+      - step:
+          deployment: devaid
+          name: Deploy to devaid
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+            - cd ./$BUILD_DIR && scp -r ./ $USER@$HOST:$SITE_ROOT$FRONTEND_PATH

@@ -1,0 +1,41 @@
+@layer components {
+  .search_desktop {
+    @apply relative w-full flex items-center;
+  }
+  .search_mobile {
+    @apply fixed top-0 right-0 left-0 h-full bg-white;
+  }
+
+  .search__form {
+    @apply h-11 bg-black-2;
+  }
+
+  @media screen(md) {
+    .search__form {
+      @apply bg-black-8;
+    }
+
+    .search__items {
+      @apply body-1 -z-10 absolute -top-1 -right-1 -left-1 pt-[60px] opacity-0 bg-white shadow-lg overflow-y-auto;
+      transform: translateY(30px);
+      transition: transform 0.15s, opacity 0.15s;
+      max-height: calc(90vh - var(--header-fact-height));
+    }
+
+    .search_active .search__items {
+      @apply opacity-100 block;
+      transform: translateY(0px);
+    }
+  }
+
+  .search-item__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+input[name='search'] {
+  outline: 0;
+}

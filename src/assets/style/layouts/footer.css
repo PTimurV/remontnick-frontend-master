@@ -1,0 +1,5 @@
+@media screen(mdDown) {
+  .footer {
+    padding-bottom: var(--tab-bar-height);
+  }
+}

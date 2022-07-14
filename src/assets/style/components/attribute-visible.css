@@ -1,0 +1,56 @@
+/* menu buttons */
+[data-menu-toggle][shown] [data-menu-show] {
+  display: none;
+}
+[data-menu-toggle]:not([shown]) [data-menu-hide] {
+  display: none;
+}
+
+/* desktop menu */
+[data-menu]:not([shown]) {
+  display: none;
+}
+
+/* mobile aside menu */
+[data-aside]:not([shown]) {
+  transform: translateX(100%);
+}
+
+/* accordion */
+[data-accordion][shown] [data-accordion-icon] {
+  @apply rotate-180;
+}
+
+/* control block visible base */
+[data-control-block-visible]:not([shown]) {
+  display: none;
+}
+
+/* dropdown */
+[data-dropdown]:not([shown]) [data-dropdown-inner] {
+  display: none;
+}
+[data-dropdown][shown] [data-dropdown-icon] {
+  @apply rotate-180;
+}
+
+/* search mobile */
+@media screen(mdDown) {
+  [data-search]:not([shown]) {
+    display: none;
+  }
+}
+
+/* categories menu */
+[data-category]:not([shown]) {
+  display: none;
+}
+
+[data-subcategory]:not([shown]) {
+  display: none;
+}
+
+/* menu variant */
+[data-menu-variant]:not([shown]) {
+  display: none;
+}

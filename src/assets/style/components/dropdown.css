@@ -1,0 +1,13 @@
+@layer components {
+  .dropdown {
+    @apply cursor-pointer relative flex items-center justify-center;
+  }
+
+  .dropdown-title {
+    @apply cursor-pointer py-3 w-full flex items-center justify-between border-b border-white-24;
+  }
+
+  .dropdown-inner {
+    @apply z-30 overflow-hidden absolute top-8 bg-white shadow-lg rounded;
+  }
+}

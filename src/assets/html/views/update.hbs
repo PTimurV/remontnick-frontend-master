@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ui kit</title>
+</head>
+<body class='flex gap-10 p-10'>
+{{> test-nav }}
+
+<div class='mx-auto flex flex-col gap-4'>
+  <h4 class='h4'>
+    Кнопка купить
+  </h4>
+
+  <button
+    class='btn-primary'
+    data-toggle="modal"
+    data-target="#modal-add-in-basket-modal-<?=$changeLabel?>"
+    onclick="$('#js-showBasketPopup-<?=$changeLabel?>').html(''); showBasketPopup<?=$changeLabel?>('<?=$arItem['ID']?>');"
+  >
+    Купить
+  </button>
+
+  <h4 class='h4 mt-4'>
+    Кнопка добавить в корзину
+  </h4>
+
+  <button onclick="buttonHandler();yaCounter314771.reachGoal('addtocart'); return true;"
+     class="btn-primary js-to-basket-modal"
+     rel="nofollow"
+  >
+    В корзину
+  </button>
+  
+  <button class='btn-outline button-2 flex items-center justify-center gap-3 w-full'>
+    <svg class='w-4 h-4 fill-secondary'>
+      <use href="@/assets/svg/arrow.svg"></use>
+    </svg>
+    
+    <span>
+      Вернуться в карточку
+    </span>
+  </button>
+
+  <!--  <a href="javascript:void(0);"-->
+  <!--     onclick="buttonHandler();yaCounter314771.reachGoal('addtocart'); return true;"-->
+  <!--     class="rk-btn rk-margin-top-10 js-to-basket-modal"-->
+  <!--     rel="nofollow"-->
+  <!--  >-->
+  <!--    <span class="rk-icon basket"></span>-->
+  <!--    <span>В корзину</span>-->
+  <!--  </a>-->
+
+  <!--<button class="rk-btn other-inform" data-toggle="modal"-->
+  <!--        data-target="#modal-add-in-basket-modal-<?=$changeLabel?>" onclick="$('#js-showBasketPopup-<?=$changeLabel?>').html(''); showBasketPopup<?=$changeLabel?>('<?=$arItem['ID']?>');">-->
+  <!--  <span class="inform-label">Добавить в корзину</span>-->
+  <!--  <span class="rk-icon basket"></span>-->
+  <!--  <span>Купить</span>-->
+  <!--</button>-->
+</div>
+
+</body>
+</html>

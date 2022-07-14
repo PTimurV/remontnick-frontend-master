@@ -1,0 +1,40 @@
+@layer components {
+  .btn {
+    @apply px-4 py-2 w-fit;
+  }
+
+  .btn-primary {
+    @apply btn
+        bg-primary text-on-primary
+        hover:bg-gradient-to-t hover:from-white/[.24] hover:to-white/[.24] hover:bg-primary hover:text-secondary hover:border-0
+        active:bg-gradient-to-t active:from-white/[.04] active:to-white/[.04] active:bg-primary active:text-secondary active:border-0
+        focus:bg-primary focus:text-secondary focus:border-0
+        active:hover:bg-primary active:hover:text-secondary active:hover:border-0
+        disabled:bg-black-32 disabled:text-white
+        disabled:hover:bg-none disabled:hover:bg-black-32;
+  }
+
+  .btn-secondary {
+    @apply btn
+        bg-secondary text-on-secondary border border-white
+        hover:bg-black-87
+        active:bg-white-24
+        disabled:bg-white-12 disabled:text-black-60 disabled:border-black-60
+        disabled:hover:bg-white-12;
+  }
+
+  .btn-outline {
+    @apply btn
+        bg-white border border-secondary
+        hover:bg-black-2
+        active:bg-secondary active:text-white
+        disabled:text-black-60 disabled:border-black-60
+        disabled:hover:bg-white;
+  }
+
+  .btn-text {
+    @apply relative whitespace-nowrap h-fit
+        before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0
+        before:bg-secondary before:h-[1px];
+  }
+}

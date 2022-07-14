@@ -1,0 +1,5 @@
+@layer components {
+  .badge {
+    @apply z-10 absolute -top-[50%] -right-[50%] bg-primary border border-white rounded-[61px];
+  }
+}

@@ -1,0 +1,6 @@
+@layer components {
+  .info-bar {
+    @apply flex justify-center items-center px-2 bg-primary text-center py-2 body-5;
+    height: var(--info-bar-height);
+  }
+}

@@ -1,0 +1,36 @@
+<!-- search -->
+<div class='search search_mobile md:hidden' id='search-mobile' data-search>
+  <div class='p-4 w-full flex items-center'>
+    <form
+      data-search-form
+      class='search__form relative pl-4 pr-12 w-full flex items-center justify-center'
+    >
+      <label class='w-full'>
+        <input
+          class='bg-black-2 w-full outline-0 placeholder:text-black-60 body-1'
+          data-search-input
+          type='text'
+          name="search"
+          placeholder="Ламинат, ковролин или клей"
+          autocomplete='off'
+        >
+      </label>
+
+      <button type='submit'
+              class='cursor-pointer absolute right-1 top-1 bottom-1 w-8 h-8 flex items-center justify-center bg-white shadow-md'
+              aria-label='Поиск'>
+        <svg class='h-4 w-4 fill-primary-dark'>
+          <use href="@/assets/svg/search-icon.svg"></use>
+        </svg>
+      </button>
+    </form>
+
+    <button class='cursor-pointer ml-6' data-search-close>
+      <svg class='fill-secondary w-[14px] h-[14px]'>
+        <use href="@/assets/svg/close.svg"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class='search__items body-1 w-full' data-search-items></div>
+</div>
