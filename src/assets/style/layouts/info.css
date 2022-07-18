@@ -1,7 +1,7 @@
-.info {
-    margin-top: 64px;
+/*.info {*/
+/*    margin-top: 64px;*/
 
-}
+/*}*/
 .info-text {
     font-size: 24px;
     font-weight: 400;
@@ -12,28 +12,28 @@
 
 
 }
-.info-circle {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*.info-circle {*/
+/*    margin-top: 32px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
 
-}
-.info-circle-img {
-    height: 80px;
-    width: 80px;
+/*}*/
+/*.info-circle-img {*/
+/*    height: 80px;*/
+/*    width: 80px;*/
 
-}
-.info-circle-left {
-    display: flex;
-}
-.info-circle-center {
-    display: flex;
-}
-.info-circle-right {
-    display: flex;
-}
-.info-circle-texth
-{
-    font-weight: bold;
-}
+/*}*/
+/*.info-circle-left {*/
+/*    display: flex;*/
+/*}*/
+/*.info-circle-center {*/
+/*    display: flex;*/
+/*}*/
+/*.info-circle-right {*/
+/*    display: flex;*/
+/*}*/
+/*.info-circle-texth*/
+/*{*/
+/*    font-weight: bold;*/
+/*}*/
