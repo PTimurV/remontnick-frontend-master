@@ -1,5 +1,7 @@
 .main-check{
-background-color: gray;
+}
+.main-check-name{
+    font-size: 16px;
 }
 .main-check1{
     font-size: 28px;
