@@ -42,3 +42,4 @@ body {
 :root {
   --tab-bar-height: 58px;
 }
+.scroll-none::-webkit-scrollbar {display: none;}
