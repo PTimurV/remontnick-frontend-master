@@ -28,12 +28,7 @@
 .b{
 font-weight: bold;
 }
-.main-m{
-    padding-top: 32px;
-    color: black;
-    font-size: 12px;
 
-}
 .main-m1{
     padding-top: 32px;
     color: black;
@@ -77,10 +72,7 @@ font-weight: bold;
     padding-top: 16px;
 
 }
-.main-text{
-    font-size: 16px;
 
-}
 .main-price{
     display: flex;
     flex-direction: row;
@@ -97,12 +89,6 @@ font-weight: bold;
     text-decoration: line-through;
 }
 .main-size{
-    display: flex;
-    flex-direction: row;
-
-
-}
-.main-menus{
     display: flex;
     flex-direction: row;
 
