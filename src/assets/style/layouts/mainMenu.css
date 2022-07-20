@@ -126,3 +126,8 @@ font-weight: bold;
     height: 941px;
 
 }
+.main-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
