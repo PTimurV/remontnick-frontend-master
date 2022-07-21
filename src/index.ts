@@ -2,6 +2,7 @@ import '../src/assets/style/index.css'
 import initFooter from './layouts/footer'
 import initHeader from './layouts/header'
 import initBehaviours from './behaviours'
+import initTabs from './components/card'
 import {
   initAside,
   initDesktopMenu,
@@ -10,6 +11,7 @@ import {
   initSearchForm,
 } from './modules'
 import breakpoints from './plugins/breakpoints'
+
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
@@ -29,8 +31,9 @@ function init() {
     initSearchBar()
     initMobileMenu()
   }
-
+  
   initFooter()
   initHeader()
   initBehaviours()
+  initTabs()
 }

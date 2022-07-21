@@ -58,12 +58,12 @@ font-weight: bold;
 }
 .main-under1{
     text-align: center;
-    border-bottom: 2px solid black;
+   
     cursor: pointer;
 }
 .main-under2{
     text-align: center;
-    border-bottom: 2px solid gray;
+    
     cursor: pointer;
 }
 .main-number{
@@ -74,6 +74,12 @@ font-weight: bold;
 }
 
 .main-price{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+
+}
+.main-price5{
     display: flex;
     flex-direction: row;
     margin-top: 12px;
@@ -130,4 +136,19 @@ font-weight: bold;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+.hidden-card{
+    color: gray;
+    border-bottom: 2px solid gray !important;
+}
+.active-card{
+    color: black;
+    border-bottom: 2px solid black !important;
+}
+
+.active-price{
+    display: flex !important;
+}
+.hidden-price{
+    display: none !important;
 }
